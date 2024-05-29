@@ -33,7 +33,7 @@
                         <div class="card-body">
                            <h2 class="card-title">Güven Barış PEKALP</h2>
                            <h5 class="card-title">Information Systems Engineer</h5>
-                           <ul class="card-text style="list-style-type: none; padding-left: 0;">
+                           <ul class="card-text" style="list-style-type: none; padding-left: 0">
                            <li>
                               <i class="fa-solid fa-tree"></i>
                               <a href="https://linktr.ee/gbpekalp" target="_blank">Back to my Linktree</a>
@@ -252,8 +252,14 @@
          </div>
       </main>
       <footer class="text-info-emphasis bg-info-subtle mt-4">
-         <div class="container-fluid"><script>document.write(new Date().getFullYear())</script> Güven Barış PEKALP</div>
+         <div class="container-fluid">
+            <span id="currentYear"></span> Güven Barış PEKALP
+         </div>
       </footer>
+      <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+    </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
          crossorigin="anonymous"></script>
